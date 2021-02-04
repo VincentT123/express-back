@@ -14,19 +14,17 @@
         <input type="text" name="comment" required />
         <button type="submit">Envoyer</button>
     </form>
-    <ul>
-        <% comments.forEach((comment)=> { %>
-            <li>
-                <strong>
-                    <%= comment.title %>
-                </strong>
-                <strong>
-                    <%= comment.comment %>
-                </strong>
-                <%= comment.date %>
-            </li>
-            <% }); %>
-    </ul>
+    
+        <ul>
+            <% comments.forEach((comment) => { %>
+                <li>
+                    <strong><%= comment.title %></strong>
+                    <strong><%= comment.comment %></strong>
+                    <%= comment.date %>
+                </li>
+            <% }); %>   
+        </ul>
+    
 </body>
 
 </html>
